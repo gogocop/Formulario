@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="form">
+            <div class="title">Formulario</div>
+        <form id = "form-login">
+            <div class="input-container ic1">
+                <input id="nombre-login" class="input" type="text" placeholder=" "  minlength="8" required/>
+                <div class="cut cut-shorter"></div>
+                <label for="nombre-login" class="placeholder">Nombre</label>    
+            </div>
+
+            <div class="input-container ic2">
+                <input id="email-login" class="input" type="email" placeholder=" " />
+                <div class="cut cut-short"></div>
+                <label for="email-login" class="placeholder">Email</label>    
+            </div>
+
+            <div class="input-container ic2">
+                <input id="pass-login" class="input" type="password" placeholder=" " minlength="10" required/>
+                <div class="cut cut-shorter"></div>
+                <label for="pass-login" class="placeholder">Contraseña</label>
+            </div>    
+
+            <div class="input-container ic2">
+                <input id="fecha-login" class="input" type="date" placeholder=" " min="1935-01-01" max="2005-01-01" required/>
+                <div class="cut"></div>
+                <label for="fecha-login" class="placeholder">Fecha de Nacimiento</label>
+            </div>    
+            
+            <input type = "submit" class="submit" value = "Iniciar Sesion"/>
+        </form>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
